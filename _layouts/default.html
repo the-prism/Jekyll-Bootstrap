@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{ site.name }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+
+  {% include meta.html %}
+
+  <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style/main.css">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  <script src="{{ site.baseurl }}/javascript/jquery-3.3.1.min.js"></script>
+  <script src="{{ site.baseurl }}/javascript/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  {% include nav-bar.html %}
+
+  {% include header.html %}
+  
+  {{ content }}
+
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Website built and maintained by <a href="https://github.com/{{ site.footer-links.github }}">the-prism</a></span>
+    </div>
+  </footer>
+</body>
+
+</html>
