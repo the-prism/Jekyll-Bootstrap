@@ -1,69 +1,42 @@
 #
-# This file contains configuration flags to customize your site
+# Website configuration file
 #
 
-# Name of your site (displayed in the header)
-name: 
+name: Mass Effect - Heleus
+description:
 
-# Short bio or description (displayed in the header)
-description: 
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: 
 
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
   email:
   facebook:
   flickr:
-  github: 
+  github: the-prism
   instagram:
   linkedin:
   pinterest:
-  rss:  # just type anything here for a working RSS icon
-  twitter: 
+  rss: the-prism # just type anything here for a working RSS icon
+  twitter: recon023
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url: 
+url: https://the-prism.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+baseurl: /heleus
 
 paginate: 5
 
-paginate_path: "/blog/page:num/"
+categories: [library, character, location, spaceship]
 
-categories: []
+excerpt_length: 50
 
-excerpt_separator: "<!-- more -->"
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
-permalink: /blog/:year/:month/:day/:title/
-
-# The release of Jekyll Now that you're using
+permalink: /story/:year/:month/:day/:title/
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
@@ -77,8 +50,8 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  sass_dir: css
-  style:    expanded # You might prefer to minify using :compressed
+  sass_dir: style
+  style: compressed # You might prefer to minify using :compressed :expanded
 
 # Use the following plug-ins
 plugins:
@@ -93,4 +66,3 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
-  - Website.code-workspace
