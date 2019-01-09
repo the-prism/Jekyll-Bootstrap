@@ -2,6 +2,8 @@
 
 This is a Jekyll template made using bootstrap 4 that allows for modularity and many parts can be customized rather easily. With no extensive knowledge beyond knowing Markdown and editing config files.
 
+You can find an example of the template on my personal page, [https://the-prism.github.io/website](https://the-prism.github.io/website)
+
 ## Configuration
 
 The YAML file `_config.yml` contains the site configuration that can be changed, name links etc.
