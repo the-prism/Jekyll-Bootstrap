@@ -10,4 +10,4 @@ The YAML file `_config.yml` contains the site configuration that can be changed,
 
 The project as is can be cloned and used with github pages or any other hosting platform that can build and deploy Jekyll websites.
 
-For manual deployment, preview or development it can be easily achieved using jekyll. The command `jekyll serve` will host a local web server to preview the final result. `jekyll build` will build the website the a folder `_site` which can be deployed to a web server as a static website.
+For manual deployment, preview or development it can be easily achieved using Jekyll. The command `jekyll serve` will host a local web server to preview the final result. `jekyll build` will build the website the a folder `_site` which can be deployed to a web server as a static website.
