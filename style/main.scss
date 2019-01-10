@@ -1,6 +1,12 @@
 ---
 ---
 
+/*!
+ * Jekyll Bootstrap
+ * Copyright 2019 Thomas Castonguay-Gagnon
+ * Licensed under GPLV3 (See license)
+ */
+
 // Import default bootstrap theme
 
 @import 'bootstrap';
@@ -16,7 +22,104 @@ body {
 .footer {
   margin-top: 50px;
   width: 100%;
-  line-height: 60px; /* Vertically center the text there */
-  padding: 20px;
   background-color: #f5f5f5;
+  padding: 20px;
+}
+
+// Custom classes
+
+.header200px {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+
+.clearfloat {
+  clear: both;
+}
+
+.leftimg {
+  border-radius: 5px;
+  margin: 15px 15px 15px 0px;
+  float: left;
+}
+
+.rightimg {
+  border-radius: 5px;
+  margin: 15px 0px 15px 15px;
+  float: right;
+}
+
+.img200px {
+  width:200px;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+article.post {
+  margin-bottom: 1.5em;
+}
+
+#banner {
+  right: 0;
+  margin-right: 0;
+}
+
+.round {
+  border-radius: 5px;
+}
+
+.sidebar {
+  margin-left: 25px;
+  margin-bottom: 5px;
+  float: right;
+  max-width: 250px;
+  width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    float: none;
+    margin-left: 0px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  h1, h2, h3, h4, h5 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+  p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  }
+}
+
+.category {
+  display: inline-table;
+  margin: 10px 10px 10px 10px;
+  padding: 5px;
+  width: 200px;
+  height: 200px;
+}
+
+.category:hover {
+  background-color: whitesmoke;
+}
+
+img {
+  max-width: 100%;
+}
+
+.link-unstyled, .link-unstyled:link, .link-unstyled:hover {
+  color: inherit;
+  text-decoration: inherit;
 }
